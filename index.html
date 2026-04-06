@@ -1,226 +1,411 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My Website</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>My Website</title>
-</head>
-
-<body>
-  <!-- Header -->
-  <section id="header">
-    <div class="header container">
-      <div class="nav-bar">
-        <div class="brand">
-          <a href="#hero">
-            <h1><span>S</span>hiv <span>S</span>hankar</h1>
-          </a>
-        </div>
-        <div class="nav-list">
-          <div class="hamburger">
-            <div class="bar"></div>
+  <body>
+    <!-- Header -->
+    <section id="header">
+      <div class="header container">
+        <div class="nav-bar">
+          <div class="brand">
+            <a href="#hero">
+              <h1><span>S</span>hiv <span>S</span>hankar</h1>
+            </a>
           </div>
+          <div class="nav-list">
+            <div class="hamburger">
+              <div class="bar"></div>
+            </div>
+            <ul>
+              <li><a href="#hero" data-after="Home">Home</a></li>
+              <li><a href="#projects" data-after="Projects">Projects</a></li>
+              <li><a href="#about" data-after="About">About</a></li>
+              <li><a href="#contact" data-after="Contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Header -->
+
+    <!-- Hero Section  -->
+    <section id="hero">
+      <div class="hero container">
+        <div>
+          <h1>Hello, <span></span></h1>
+          <h1>My Name is <span></span></h1>
+          <h1>Shiv Shankar<span></span></h1>
+          <h1>Full Stack Developer <span></span></h1>
+          <h2>I Build Scalable Web Apps With Modern Tech.<span></span></h2>
+          <a href="#projects" type="button" class="project-btn">Projects</a>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero Section  -->
+
+    <!-- Service Section -->
+    <section id="services">
+      <div class="services">
+        <div class="service-top">
+          <h1 class="section-hey">Hey<span>,</span></h1>
           <ul>
-            <li><a href="#hero" data-after="Home">Home</a></li>
-            <li><a href="#projects" data-after="Projects">Projects</a></li>
-            <li><a href="#about" data-after="About">About</a></li>
-            <li><a href="#contact" data-after="Contact">Contact</a></li>
+            <li>
+              ⚡A passionate Full Stack Software Developer 🚀 having an
+              experience of building Web and Mobile applications with JavaScript
+              / Reactjs / Nodejs / React Native and some other cool libraries
+              and frameworks.
+            </li>
+            <li>
+              ⚡I enjoy solving real-world problems, optimizing performance, and
+              continuously learning new technologies to stay ahead in the
+              industry.
+            </li>
+            <li>
+              ⚡Beyond coding, I’m interested in business ideas, startups, and
+              personal growth.
+            </li>
           </ul>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- End Header -->
-
-
-  <!-- Hero Section  -->
-  <section id="hero">
-    <div class="hero container">
-      <div>
-        <h1>Hello, <span></span></h1>
-        <h1>My Name is <span></span></h1>
-        <h1>Shiv Shankar<span></span></h1>
-        <h1>A Student & Web Developer<span></span></h1>
-        <a href="#projects" type="button" class="cta">Portfolio</a>
-      </div>
-    </div>
-  </section>
-  <!-- End Hero Section  -->
-
-  <!-- Service Section -->
-  <section id="services">
-    <div class="services">
-      <div class="service-top">
-        <h1 class="section-hey">Hey<span>,</span></h1>
-          <ul>
-              <li>I'm Shiv Shankar from Gorakhpur|!</li>
-              <li>I love programming, as well as running, and learning new things business ideas!</li>
-              <li>Feel free to get in touch or take a look at my past work below.</li>
-          </ul>
-      </div>
-    </div>
-  </section>
-  <!-- End Service Section -->
-
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="projects container">
-      <div class="projects-header">
-        <h1 class="section-title">Recent <span>Projects</span></h1>
-      </div>
-      <div class="all-projects">
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project-1</h1>
-            <h2>E-Pulse line</h2>
-            <p>The proposed project is a smart appointment booking system that provides patients
-              or any user to booking a doctor’s appointment online in an easy way. This is a webbased application that overcomes the issue of managing and booking appointments
-              according to user’s choice or demands. The task sometimes becomes very tedious for
-              the compounder or doctor himself in manually allotting appointments for the users
-              as per their availability.</p>
-              <h2>Technology & Language:-HTML, CSS, JS, MYSql, Php, sublime, Xampp</h2>
-          </div>
-          <div class="project-img">
-            <img src="./img/e pulse line.PNG" alt="img">
-          </div>
+    </section>
+    <!-- End Service Section -->
+    <!-- what i do section -->
+    <section class="what-i-do">
+      <div class="containerWhat-i-do">
+        <!-- Left Image -->
+        <div class="left">
+          <img src="img/programming.png" alt="developer illustration" />
         </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 2</h1>
-            <h2>UX/UI</h2>
+
+        <!-- Right Content -->
+        <div class="right">
+          <h1>What I do</h1>
+          <p class="subtitle">
+            CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK
+          </p>
+
+          <!-- Tech Icons -->
+          <div class="icons">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>Tailwind</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>React Native</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
+            <span>MySql</span>
+            <span>VPS</span>
+          </div>
+
+          <!-- Points -->
+          <div class="points">
             <p>
-              HelloConn - Android Chat App Template<br/>
-              HelloConn is a powerful and responsive chat template 
-              built with Figma. HelloConn allows you to add new users,
-               create groups, Reply, Forward, Copy & Delete messages. 
-               We have provide Audio call, Video call popup design and Map and contact card design. 
-               It’s a fully responsive in all devices.  users & groups messages using redux.
-                Also, we have provided a theme background color and image options for a modern look. 
-                HelloConn chat app template for new generation chat application.  
-                Feel free to contact us via support for any questions or suggestions so we can try to add them in future updates. </p>
-          </div>
-          <div class="project-img">
-            <img src="./img/ui.PNG" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project-3</h1>
-            <h2>HelloConn</h2>
-            <p>Connect any time anywhere in the world without any information. HelloConn is a simple, Secure, and fast connection App.
-              Message your friends and family for free*.HelloConn uses your phone's Internet connection to send messages so you can 
-              avoid SMS fees. Sometimes, your voice says it all. With just one tap you can record a Voice Message, perfect for a quick hello or a longer story. 
+              ⚡ Develop highly interactive Front end / User Interfaces for web
+              and mobile applications
             </p>
-            <h2>Technology & Language:- HTML 5, Bootstrap, ReactJS, VS-Code, Figmacd</h2>
-          </div>
-          <div class="project-img">
-            <img src="./img/helloconn.PNG" alt="img">
-          </div>
-        </div>
-        <!--find word section-->
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 4</h1>
-            <h2>UX/UI</h2>
             <p>
-              FindWork -Web & Mobile Application for find  job or work.<br/>
-              This app will help the recruiters in hiring the individuals as 
-              well as unemployed individuals can also get the job opportunities 
-              as per their requirements with some time periods (i.e an hour, a days, a year). For More Details
+              ⚡ Progressive Web Applications (PWA) in normal and SPA stacks
+            </p>
+            <p>
+              ⚡ Integration of third party services such as Firebase / AWS /
+              Digital Ocean
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End what i do section -->
 
-              <a target="_blank" href="https://www.figma.com/file/hLajCl6KSh1sevvTAJDiUr/Untitled?type=design&node-id=2%3A2&mode=design&t=4dGEOpfvjhXYjmIv-1" style="color:red">Click Me</a></p>
-          </div>
-          <div class="project-img">
-            <img src="./img/Desktop.png" alt="img">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Projects Section -->
+    <!--- Proficiency --->
+    <section class="proficiency">
+      <div class="containerProficiency">
+        <!-- Left Content -->
+        <div class="skills">
+          <h2>PROFICIENCY</h2>
 
-  <!-- About Section -->
-  <section id="about">
-    <div class="about container">
-      <div class="col-left">
-        <div class="about-img">
-          <img src="./img/self.jpg" alt="img">
-        </div>
-      </div>
-      <div class="col-right">
-        <h1 class="section-title">About <span>me</span></h1>
-        <h2>A Full Stack Web Developer</h2>
-        <p>A FullStack Web Developer with a background in Life Sciences seeking to apply a broad technical repertoire in the creation of interesting web content. Experienced with the Full stack (React, MySQLi, Laravel); also proficient in HTML5, CSS3, Javascript, Ajax, PHP, Bootstrap, Materialize, jQuery, MySQLi, and Figma.</p>
-        <a href="https://drive.google.com/file/d/1zDZ8JN7pVWFfhMkOkCxheLNe0JcIVYEH/view?usp=sharing" target="_blank" class="cta">Download Resume</a>
-      </div>
-    </div>
-  </section>
-  <!-- End About Section -->
+          <div class="skill">
+            <p>Frontend/Design</p>
+            <div class="progress-bar">
+              <div class="progress frontend"></div>
+            </div>
+          </div>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="contact container">
-      <div>
-        <h1 class="section-title">Contact <span>info</span></h1>
-      </div>
-      <div class="contact-items">
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
-          <div class="contact-info">
-            <h1>Phone</h1>
-            <h2>+91 790 557 3608</h2>
-            <h2>+91 739 836 4292</h2>
+          <div class="skill">
+            <p>Backend</p>
+            <div class="progress-bar">
+              <div class="progress backend"></div>
+            </div>
           </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
-          <div class="contact-info">
-            <h1>Email</h1>
-            <h2>shivhack999@gmail.com</h2>
-            <h2>shiv.regkec-991-21@krishnacollenge.ac.in</h2>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
-          <div class="contact-info">
-            <h1>Address</h1>
-            <h2>Ghaziabad</h2>
-            <h2>Utter Pradesh 201004</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Contact Section -->
 
-  <!-- Footer -->
-  <section id="footer">
-    <div class="footer container">
-      <div class="brand">
-        <h1><span>S</span>hiv <span>S</span>oft</h1>
+          <div class="skill">
+            <p>Programming</p>
+            <div class="progress-bar">
+              <div class="progress programming"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Illustration -->
+        <div class="illustration">
+          <img src="img/progress.png" alt="coding illustration" />
+        </div>
       </div>
-      <h2>Your Complete Web Solution</h2>
-      <div class="social-icon">
-        <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+    </section>
+    <!---  End Proficiency --->
+    <!-- Education -->
+    <section class="education">
+      <h1>Education</h1>
+
+      <!-- Harvard -->
+      <div class="edu-item">
+        <div class="edu-logo">
+          <img
+            src="img/krishna.jpg"
+            alt="Harvard"
+          />
         </div>
-        <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+
+        <div class="edu-content">
+          <h2>Krishna Engineering Collage</h2>
+          <h3>Bachelor of Technology in Computer Science and Engineering</h3>
+          <div class="date">September 2021 - April 2024</div>
         </div>
-        <!-- <div class="social-item">
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Stanford -->
+      <div class="edu-item">
+        <div class="edu-logo">
+          <img
+            src="/img/MP.jpeg"
+            alt="Stanford"
+          />
+        </div>
+
+        <div class="edu-content">
+          <h2>MAHARANA PRATAP POLYTECHNIC</h2>
+          <h3>Diploma in Computer Science & Engineering</h3>
+          <div class="date">September 2017 - April 2020</div>
+        </div>
+      </div>
+    </section>
+    <!--End Education-->
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="projects container">
+        <div class="projects-header">
+          <h1 class="section-title">Recent <span>Projects</span></h1>
+        </div>
+        <div class="all-projects">
+          <div class="project-item">
+            <div class="project-info">
+              <h1>Project-1</h1>
+              <h2>Complaint Management System</h2>
+              <p>
+                Developed a smart Complaint Management System to streamline
+                issue handling and field operations. The platform allows users
+                and internal staff to register complaints, assign tasks to field
+                employees, and track resolution status in real time. It includes
+                live employee location tracking, activity monitoring, and
+                performance insights. Additionally, the system generates
+                detailed work reports, attendance records, and TA reports to
+                improve transparency and operational efficiency.
+              </p>
+              <h2>
+                Technology & Language:-HTML, CSS, JS, MYSql, Php, sublime, Xampp
+              </h2>
+            </div>
+            <div class="project-img">
+              <img src="./img/galo.png" alt="img" />
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-info">
+              <h1>Project 2</h1>
+              <h2>CUSTOMER RELATIONSHIP MANAGEMENT</h2>
+              <p>
+                Developed a smart CRM system to streamline lead management and
+                improve team productivity. The platform allows bulk lead uploads
+                via Excel with automatic assignment to sales employees based on
+                location. It provides real-time tracking of lead status,
+                employee activities, travel history, and work progress.
+                Additionally, the system generates TA (Travel Allowance),
+                incentives, and detailed performance reports. This solution
+                enhanced operational efficiency and increased overall
+                productivity by up to 40% compared to traditional CRM systems.
+              </p>
+            </div>
+            <div class="project-img">
+              <img src="./img/CRM.PNG" alt="img" />
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-info">
+              <h1>Project-3</h1>
+              <h2>INVENTORY MANAGEMENT SYSTEM</h2>
+              <p>
+                Developed a smart inventory management system to streamline
+                product tracking and operations. The system enables efficient
+                product entry with real-time quantity monitoring, automated
+                purchase order (PO) generation, and seamless assignment of
+                products to service employees. It also includes a defect
+                management module to track and handle faulty products, ensuring
+                better inventory control and operational efficiency.
+              </p>
+              <h2>
+                Technology & Language:- HTML 5, Bootstrap, ReactJS, VS-Code,
+                Figmacd
+              </h2>
+            </div>
+            <div class="project-img">
+              <img src="./img/inventory.png" alt="img" />
+            </div>
+          </div>
+          <!--find word section-->
+          <!-- <div class="project-item">
+            <div class="project-info">
+              <h1>Project 4</h1>
+              <h2>UX/UI</h2>
+              <p>
+                FindWork -Web & Mobile Application for find job or work.<br />
+                This app will help the recruiters in hiring the individuals as
+                well as unemployed individuals can also get the job
+                opportunities as per their requirements with some time periods
+                (i.e an hour, a days, a year). For More Details
+
+                <a
+                  target="_blank"
+                  href="https://www.figma.com/file/hLajCl6KSh1sevvTAJDiUr/Untitled?type=design&node-id=2%3A2&mode=design&t=4dGEOpfvjhXYjmIv-1"
+                  style="color: red"
+                  >Click Me</a
+                >
+              </p>
+            </div>
+            <div class="project-img">
+              <img src="./img/e-form-india.png" alt="img" />
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+    <!-- End Projects Section -->
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="about container">
+        <div class="col-left">
+          <div class="about-img">
+            <img src="./img/profile.png" style="background-color: white" alt="img" />
+          </div>
+        </div>
+        <div class="col-right">
+          <h1 class="section-title">About <span>me</span></h1>
+          <h2>A Full Stack Web Developer</h2>
+          <p>
+            A FullStack Web Developer with a background in Life Sciences seeking
+            to apply a broad technical repertoire in the creation of interesting
+            web content. Experienced with the Full stack (React, MySQLi,
+            Laravel); also proficient in HTML5, CSS3, Javascript, React, React Native, Tailwind CSS, 
+            Bootstrap, Node.js, MySQL, MongoDB, VPS and Figma.
+          </p>
+          <a
+            href="https://drive.google.com/file/d/1jzLOvj6xS57expOv0N7_PW-qzO_hfzwE/view?usp=drivesdk"
+            target="_blank"
+            class="cta"
+            >Download MY CV</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="contact container">
+        <div>
+          <h1 class="section-title">Contact <span>info</span></h1>
+        </div>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="icon">
+              <img src="https://img.icons8.com/bubbles/100/000000/phone.png" />
+            </div>
+            <div class="contact-info">
+              <h1>Phone</h1>
+              <h2>+91 790 557 3608</h2>
+              <h2>+91 739 836 4292</h2>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon">
+              <img
+                src="https://img.icons8.com/bubbles/100/000000/new-post.png"
+              />
+            </div>
+            <div class="contact-info">
+              <h1>Email</h1>
+              <h2>shivhack999@gmail.com</h2>
+              <h2>shiv.regkec-991-21@krishnacollenge.ac.in</h2>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon">
+              <img
+                src="https://img.icons8.com/bubbles/100/000000/map-marker.png"
+              />
+            </div>
+            <div class="contact-info">
+              <h1>Address</h1>
+              <h2>Ghaziabad</h2>
+              <h2>Utter Pradesh 201004</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="footer container">
+        <div class="brand">
+          <h1><span>S</span>hiv <span>S</span>oft</h1>
+        </div>
+        <h2>Your Complete Web Solution</h2>
+        <div class="social-icon">
+          <div class="social-item">
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"
+            /></a>
+          </div>
+          <div class="social-item">
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"
+            /></a>
+          </div>
+          <!-- <div class="social-item">
           <a href="#"><img src="https://icons8.com/icon/99365/twitter-squared" /></a>
         </div> -->
-        <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
+          <div class="social-item">
+            <a href="#"
+              ><img src="https://img.icons8.com/bubbles/100/000000/behance.png"
+            /></a>
+          </div>
         </div>
+        <p>Copyright © 2020 Shiv_Soft. All rights reserved</p>
       </div>
-      <p>Copyright © 2020 Shiv_Soft. All rights reserved</p>
-    </div>
-  </section>
-  <!-- End Footer -->
-  <script src="./app.js"></script>
-</body>
+    </section>
+    <!-- End Footer -->
 
+    <script src="./app.js"></script>
+  </body>
 </html>
